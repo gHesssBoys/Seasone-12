@@ -33,9 +33,6 @@ echo "- Silahkan Install Terlebih Dahulu Apk PUBG GLOBAL 0.17.0"
 exit 0;
 fi
 sleep 1
-echo ""
-echo ""
-echo ""
 echo "╔══════════════════════════════╗"
 echo "|✪Please Wait...                                 |"
 echo "╚══════════════════════════════╝"
