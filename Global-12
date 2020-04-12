@@ -265,8 +265,6 @@ getprop ro.hardware
 sleep 2
 echo ""
 iptables --flush
-echo ""
-echo ""
 instalasi
 echo ""
 echo "╔══════════════════════════════╗"
