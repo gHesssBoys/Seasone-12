@@ -242,8 +242,8 @@ echo ""
 echo "Mantaaap Kalian Luar Biassa !!!"
 }
 
-date "+%a %d %b %Y %Z %H:%M:%S"
-sleep 2
+
+sleep 3
 echo ""
 echo -n "Time Zone																: "
 getprop persist.sys.timezone
@@ -267,19 +267,6 @@ echo ""
 iptables --flush
 echo ""
 echo ""
-echo "╔══════════════════════════════╗"
-echo " |     PUBG MOBILE GLOBAL - MetroCheat_PBO™     |"
-echo "╚══════════════════════════════╝"
-echo " ✪ PUBG MOBILE GLOBAL SEASONE 12                  "
-echo "                                                   "
-echo " • Package  									:			com.tencent.ig                   "
-echo "                                       "
-echo " • App Version 						:			0.17.0.11800        "
-echo " • Source Version 			:			0.17.0.11808        "
-echo "╔══════════════════════════════╗"
-echo " |  • Admin By : MCPBO™ - @gHesss_Boys          |"
-echo "╚══════════════════════════════╝"
-sleep 2
 instalasi
 echo""
 echo ""
