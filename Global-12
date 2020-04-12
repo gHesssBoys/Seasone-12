@@ -268,8 +268,6 @@ iptables --flush
 echo ""
 echo ""
 instalasi
-echo""
-echo ""
 echo ""
 echo "╔══════════════════════════════╗"
 echo "| ✪[RULES]                                       |"
