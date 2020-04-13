@@ -30,7 +30,6 @@ echo "╔═══════════════════════�
 echo "| ✪                  𝐂𝐥𝐞𝐚𝐧𝐢𝐧𝐠 𝐥𝐨𝐠𝐬 - 10 ᴍɪɴ ꜰɪx    ✓ |"
 echo "╚══════════════════════════════╝"
 rm -rf /storage/emulated/0/Android/data/com.tencent.ig/cache
-rm -rf /storage/emulated/0/tencent
 rm -rf /storage/emulated/0/MidasOverse
 rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/tbslog
 rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/login-identifier.txt
