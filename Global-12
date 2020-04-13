@@ -24,6 +24,25 @@ echo "╚═══════════════════════�
 sleep 10
 }
 
+Fix()
+{
+echo "╔══════════════════════════════╗"
+echo "| ✪                  𝐂𝐥𝐞𝐚𝐧𝐢𝐧𝐠 𝐥𝐨𝐠𝐬 - 10 ᴍɪɴ ꜰɪx    ✓ |"
+echo "╚══════════════════════════════╝"
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/cache
+rm -rf /storage/emulated/0/tencent
+rm -rf /storage/emulated/0/MidasOverse
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/tbslog
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/login-identifier.txt
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/cacheFile.txt
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/vmpcloudconfig.json
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/IGH5CachePluginConfig.ini
+sleep 1
+}
+
 instalasi()
 {
 if [ ! -d "/data/data/com.tencent.ig" ];
@@ -310,6 +329,7 @@ PACKAGE='com.tencent.ig'
 while [ $(pidof $PACKAGE) ]
 do
 c=$((c+1))
+Fix
 Logcleaner
 ((COUNT=$COUNT+10))
 if [ ! $(pidof $PACKAGE) ]; then
