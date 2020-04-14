@@ -304,7 +304,7 @@ echo "╔═══════════════════════�
 echo "|✪Starting MCPBO™ GameGuardian...                |"
 echo "╚══════════════════════════════╝"
 sleep 1
-am start -n com.bbksb.vdjw/com.bbksb.vdjw.MainActivity
+am start -n com.xbvqitfebbloqbyh/com.xbvqitfebbloqbyh.MainActivity
 sleep 1
 am start -n bin.mt.plus/bin.mt.plus.Main
 sleep 3
@@ -337,7 +337,7 @@ fi
 sleep 1
 done
 ((final=$COUNT/60))
-am force-stop com.bbksb.vdjw
+am force-stop com.xbvqitfebbloqbyh
 am start -n bin.mt.plus/bin.mt.plus.Main
 echo ""
 echo "╔══════════════════════════════╗"
