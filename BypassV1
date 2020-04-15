@@ -1,0 +1,426 @@
+function split(szFullString, szSeparator)
+  local nFindStartIndex, nSplitIndex
+  nFindStartIndex = 1
+  nSplitIndex = 1
+  while true do
+    if not string[nFindLastIndex("1c 1f 24 1a")](szFullString, szSeparator, nFindStartIndex) then
+      break
+    end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+    nFindStartIndex = string[nFindLastIndex("1c 1f 24 1a")](szFullString, szSeparator, nFindStartIndex) + string[nFindLastIndex("22 1b 24")](szSeparator)
+    nSplitIndex = nSplitIndex + 1
+  end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+  return {}
+end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+
+function xgxc(szpy, qmxg)
+  local L2_10, L3_11, L4_12, L5_13
+  L2_10 = 1
+  L3_11 = #qmxg
+  for i = 1, #qmxg do
+    xgpy = szpy + qmxg[i].offset
+    xglx = qmxg[i].type
+    xgsz = qmxg[i].value
+    gg.setValues({})
+    xgsl = xgsl + 1
+  end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+
+function xqmnb(qmnb)
+  gg.clearResults()
+  gg.setRanges(qmnb[1].memory)
+  gg.searchNumber(qmnb[3].value, qmnb[3].type)
+  if gg.getResultCount() == 0 then
+    gg.toast(qmnb[2].name .. "开启失败")
+  else
+    gg.refineNumber(qmnb[3].value, qmnb[3].type)
+    gg.refineNumber(qmnb[3].value, qmnb[3].type)
+    gg.refineNumber(qmnb[3].value, qmnb[3].type)
+    if gg.getResultCount() == 0 then
+      gg.toast(qmnb[2].name .. "开启失败")
+    else
+      sl = gg.getResults(999999)
+      sz = gg.getResultCount()
+      xgsl = 0
+      if 999999 < sz then
+        sz = 999999
+      end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+      for i = 1, sz do
+        pdsz = true
+        for i = 4, #qmnb do
+          if pdsz == true then
+            pysz = {}
+            szpy = gg.getValues(pysz)
+            pdpd = qmnb[i].lv .. ";" .. szpy[1].value
+            szpd = split(pdpd, ";")
+            tzszpd = szpd[1]
+            pyszpd = szpd[2]
+            if tzszpd == pyszpd then
+              pdjg = true
+              pdsz = true
+            else
+              pdjg = false
+              pdsz = false
+            end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+          end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+        end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+        if pdjg == true then
+          szpy = sl[i].address
+          xgxc(szpy, qmxg)
+          xgjg = true
+        end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+      end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+      if xgjg == true then
+        gg.toast(qmnb[2].name .. "开启成功,共修改" .. xgsl .. "条数据")
+      else
+        gg.toast(qmnb[2].name .. "开启失败")
+      end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+    end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+  end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+
+function split(szFullString, szSeparator)
+  local nFindStartIndex, nSplitIndex
+  nFindStartIndex = 1
+  nSplitIndex = 1
+  while true do
+    if not string[nFindLastIndex("1c 1f 24 1a")](szFullString, szSeparator, nFindStartIndex) then
+      break
+    end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+    nFindStartIndex = string[nFindLastIndex("1c 1f 24 1a")](szFullString, szSeparator, nFindStartIndex) + string[nFindLastIndex("22 1b 24")](szSeparator)
+    nSplitIndex = nSplitIndex + 1
+  end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+  return {}
+end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+
+function xgxc(szpy, Loading1)
+  local L2_21, L3_22, L4_23, L5_24
+  L2_21 = 1
+  L3_22 = #Loading1
+  for i = 1, #Loading1 do
+    xgpy = szpy + Loading1[i].address
+    xglx = Loading1[i].flags
+    xgsz = Loading1[i].value
+    xgdj = Loading1[i].freeze
+    if xgdj == nil or xgdj == "" then
+      gg.setValues({})
+    else
+      gg.addListItems({})
+    end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+    xgsl = xgsl + 1
+    xgjg = true
+  end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+
+function LoadingQ(Loading)
+  gg.setRanges(Loading[1].memory)
+  gg.searchNumber(Loading[3].value, Loading[3].flags)
+  if gg.getResultCount() == 0 then
+    gg.toast(Loading[2].Projects .. "Load失败❌")
+  else
+    gg.refineNumber(Loading[3].value, Loading[3].flags)
+    gg.refineNumber(Loading[3].value, Loading[3].flags)
+    gg.refineNumber(Loading[3].value, Loading[3].flags)
+    if gg.getResultCount() == 0 then
+      gg.toast(Loading[2].Projects .. "Load失败❌")
+    else
+      sl = gg.getResults(999999)
+      sz = gg.getResultCount()
+      xgsl = 0
+      if 999999 < sz then
+        sz = 999999
+      end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+      for i = 1, sz do
+        pdsz = true
+        for i = 4, #Loading do
+          if pdsz == true then
+            pysz = {}
+            szpy = gg.getValues(pysz)
+            pdpd = Loading[i].lv .. ";" .. szpy[1].value
+            szpd = split(pdpd, ";")
+            tzszpd = szpd[1]
+            pyszpd = szpd[2]
+            if tzszpd == pyszpd then
+              pdjg = true
+              pdsz = true
+            else
+              pdjg = false
+              pdsz = false
+            end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+          end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+        end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+        if pdjg == true then
+          szpy = sl[i].address
+          xgxc(szpy, Loading1)
+        end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+      end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+      if xgjg == true then
+      end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+    end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+  end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+
+function edit(orig, ret)
+  _om = orig[1].memory or orig[1][1]
+  _ov = orig[3].value or orig[3][1]
+  _on = orig[2].name or orig[2][1]
+  gg.clearResults()
+  gg.setRanges(_om)
+  gg.searchNumber(_ov, orig[3].type or orig[3][2])
+  sz = gg.getResultCount()
+  if 1 > sz then
+    gg.toast(_on .. " 开启失败")
+  else
+    sl = gg.getResults(50000)
+    do
+      do
+        for _FORV_5_ = 1, sz do
+          ist = true
+          do
+            do
+              for _FORV_9_ = 4, #orig do
+                if ist == true and sl[_FORV_5_].value == _ov then
+                  cd = {
+                    {}
+                  }
+                  cd[1].address = sl[_FORV_5_].address + (orig[_FORV_9_].offset or orig[_FORV_9_][2])
+                  cd[1].flags = orig[_FORV_9_].type or orig[_FORV_9_][3]
+                  szpy = gg.getValues(cd)
+                  cdlv = orig[_FORV_9_].lv or orig[_FORV_9_][1]
+                  cdv = szpy[1].value
+                  if cdlv == cdv then
+                    pdjg = true
+                    ist = true
+                  else
+                    pdjg = false
+                    ist = false
+                  end
+                end
+              end
+            end
+          end
+          if pdjg == true then
+            szpy = sl[_FORV_5_].address
+            do
+              do
+                for _FORV_9_ = 1, #ret do
+                  xgpy = szpy + (ret[_FORV_9_].offset or ret[_FORV_9_][2])
+                  xglx = ret[_FORV_9_].type or ret[_FORV_9_][3]
+                  xgsz = ret[_FORV_9_].value or ret[_FORV_9_][1]
+                  xgdj = ret[_FORV_9_].freeze or ret[_FORV_9_][4]
+                  xgsj = {
+                    {
+                      address = xgpy,
+                      flags = xglx,
+                      value = xgsz
+                    }
+                  }
+                  if xgdj == true then
+                    xgsj[1].freeze = xgdj
+                    gg.addListItems(xgsj)
+                  else
+                    gg.setValues(xgsj)
+                  end
+                end
+              end
+            end
+            xgjg = true
+          end
+        end
+      end
+    end
+    if xgjg == true then
+      gg.toast(_on .. " 开启成功")
+    else
+      gg.toast(_on .. " 开启失败")
+    end
+  end
+end
+
+function checkType(dataType)
+  local type
+  if dataType == "D" or dataType == "D" then
+    type = gg.TYPE_DWORD
+  end
+  if dataType == "F" then
+    type = gg.TYPE_FLOAT
+  end
+  if dataType == "E" then
+    type = gg.TYPE_DOUBLE
+  end
+  if dataType == "B" or dataType == "B" then
+    type = gg.TYPE_BYTE
+  end
+  if dataType == "W" or dataType == "W" then
+    type = gg.TYPE_WORD
+    os.exit()
+  end
+  return type
+end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+
+GG = {
+  Read,
+  Write
+}
+function SearchWrite(Search, Write, Type)
+  gg.clearResults()
+  gg.setVisible(false)
+  gg.searchNumber(Search[1][1], Type)
+  gg.clearResults()
+  if gg.getResults(9999) ~= nil then
+    for i = 2, #Search do
+      for i, i in ipairs((gg.getResults(9999))) do
+      end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+      for i = #gg.getResults(9999), 1, -1 do
+        if tostring(gg.getValues({})[i].value) ~= tostring(Search[i][1]) then
+          table.remove(gg.getResults(9999), i)
+          table.remove(gg.getValues({}), i)
+        end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+      end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+    end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+    for i = 1, #gg.getResults(9999) do
+      for i = 1, #Write do
+      end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+    end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+    gg.setValues({})
+  end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+
+function split(szFullString, szSeparator)
+  local nFindStartIndex, nFindStartIndex
+  nFindStartIndex = 1
+  nFindStartIndex = 1
+  while true do
+    if not string[nFindLastIndex("1c 1f 24 1a")](szFullString, szSeparator, nFindStartIndex) then
+      break
+    end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+    nFindStartIndex = string[nFindLastIndex("1c 1f 24 1a")](szFullString, szSeparator, nFindStartIndex) + string[nFindLastIndex("22 1b 24")](szSeparator)
+    nFindStartIndex = nFindStartIndex + 1
+  end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+  return {}
+end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+
+function xgxc(szpy, qmxg)
+  local L2_39, L3_40, L4_41, L5_42
+  L2_39 = 1
+  L3_40 = #qmxg
+  for i = 1, #qmxg do
+    xgpy = szpy + qmxg[i].offset
+    xglx = qmxg[i].type
+    xgsz = qmxg[i].value
+    gg.setValues({})
+    xgsl = xgsl + 1
+  end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+
+function xqmnb(qmnb)
+  gg.clearResults()
+  gg.setRanges(qmnb[1].memory)
+  gg.searchNumber(qmnb[3].value, qmnb[3].type)
+  if gg.getResultCount() == 0 then
+    gg.toast(qmnb[2].name .. "开启失败")
+  else
+    gg.refineNumber(qmnb[3].value, qmnb[3].type)
+    gg.refineNumber(qmnb[3].value, qmnb[3].type)
+    gg.refineNumber(qmnb[3].value, qmnb[3].type)
+    if gg.getResultCount() == 0 then
+      gg.toast(qmnb[2].name .. "开启失败")
+    else
+      sl = gg.getResults(999999)
+      sz = gg.getResultCount()
+      xgsl = 0
+      if 999999 < sz then
+        sz = 999999
+      end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+      for i = 1, sz do
+        pdsz = true
+        for i = 4, #qmnb do
+          if pdsz == true then
+            pysz = {}
+            szpy = gg.getValues(pysz)
+            pdpd = qmnb[i].lv .. ";" .. szpy[1].value
+            szpd = split(pdpd, ";")
+            tzszpd = szpd[1]
+            pyszpd = szpd[2]
+            if tzszpd == pyszpd then
+              pdjg = true
+              pdsz = true
+            else
+              pdjg = false
+              pdsz = false
+            end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+          end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+        end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+        if pdjg == true then
+          szpy = sl[i].address
+          xgxc(szpy, qmxg)
+          xgjg = true
+        end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+      end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+      if xgjg == true then
+        gg.toast(qmnb[2].name .. "开启成功,共修改" .. xgsl .. "条数据")
+      else
+        gg.toast(qmnb[2].name .. "开启失败")
+      end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+    end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+  end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
+
+gg.alert("[▫️] BYPAS V1 PUBG MOBILE GLOBAL - MetroCheat_PBO™")
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("1,130,852,172;1,852,139,884", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("0", gg.TYPE_DWORD)
+gg.clearResults()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("1,801,989,935;1,919,905,893;1,768,710,958;1,920,233,061", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("0", gg.TYPE_DWORD)
+gg.clearResults()
+edit({
+  {
+    gg.REGION_C_ALLOC
+  },
+  {"Bypass"},
+  {16384, 4},
+  {
+    16384,
+    4,
+    4
+  },
+  {
+    16384,
+    8,
+    4
+  },
+  {
+    16384,
+    12,
+    4
+  },
+  {
+    16384,
+    16,
+    4
+  },
+  {
+    16384,
+    20,
+    4
+  },
+  {
+    16384,
+    508,
+    4
+  }
+}, {
+  {
+    0,
+    100,
+    4,
+    true
+  }
+})
+gg.clearResults()
+gg.alert("[◽] BYPASS V1 MCPBO™ DONE")
