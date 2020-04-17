@@ -365,7 +365,7 @@ function xqmnb(qmnb)
   end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
 end -- ✪ Admin By : MCPBO™ - @gHesss_Boys 
 
-gg.alert("[▫️] BYPAS V1 PUBG MOBILE GLOBAL - MetroCheat_PBO™")
+gg.alert("[▫️] BYPAS V1 - MetroCheat_PBO™")
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("1,130,852,172;1,852,139,884", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
