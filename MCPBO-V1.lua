@@ -118,6 +118,7 @@ MENU = gg.multiChoice(
 "📁 Folder Wallhack",
 "📁 Folder Body Collor",
 "📁 Folder Weapone Hack",
+"📁 Folder Weapone Lobby",
 "📁 Folder Player Hack",
 "📁 Folder Antena Player",
 "📁 Folder Speed Hack",
@@ -129,11 +130,12 @@ else
 if MENU [1] == true then WALLHACK() end
 if MENU [2] == true then COLLOR() end
 if MENU [3] == true then Weapon() end
-if MENU [4] == true then PlayerInGame() end
-if MENU [5] == true then AntenaInGame() end
-if MENU [6] == true then SpeedInGame() end
-if MENU [7] == true then ViewInGame() end
-if MENU [8] == true then PERTAMA()  end 
+if MENU [4] == true then HSWepone() end
+if MENU [5] == true then PlayerInGame() end
+if MENU [6] == true then AntenaInGame() end
+if MENU [7] == true then SpeedInGame() end
+if MENU [8] == true then ViewInGame() end
+if MENU [9] == true then PERTAMA()  end 
 end
 MCPBO = -1
 end
@@ -1048,6 +1050,7 @@ function Weapon()
     "┏ No Recoil [Loby]",
 	"┏ AimLock [Loby]",
 	"┏ Aimbot [Game]",
+	"┏ HS 30% [Land]",
 	"┏ HS 50% [Land]",
     "┏ HS 70% [Land]",
 	"┏ HS 90% [Land]",
@@ -1070,11 +1073,12 @@ if MCWeapon[6] == true then mbhs2()end
 if MCWeapon[7] == true then mbhs3()end
 if MCWeapon[8] == true then mbhs4()end
 if MCWeapon[9] == true then mbhs5()end
-if MCWeapon[10] == true then ESPAIM()end
-if MCWeapon[11] == true then ESP()end
-if MCWeapon[12] == true then Dmg()end
-if MCWeapon[13] == true then HSWepone()end
-if MCWeapon[14] == true then HOME()end
+if MCWeapon[10] == true then mbhs6()end
+if MCWeapon[11] == true then ESPAIM()end
+if MCWeapon[12] == true then ESP()end
+if MCWeapon[13] == true then Dmg()end
+if MCWeapon[14] == true then HSWepone()end
+if MCWeapon[15] == true then HOME()end
 end
 end
 function lessrec()
@@ -1154,29 +1158,34 @@ function aimbot360()
   gg.clearResults()
   gg.toast("Aimbot activated!")
 end
-function mbhs1() 
+function mbhs1()
+gg.alert("HEADSHOT 30% ")
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("100", gg.TYPE_FLOAT)
+  gg.toast("Headshot 30%")
+end
+function mbhs2() 
 gg.alert("HEADSHOT 50% ")
-gg.clearResults()
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("9.20161819458;23;25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResultsCount()
-gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10)
-gg.editAll("90", gg.TYPE_FLOAT)
-gg.clearResults()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("130", gg.TYPE_FLOAT)
 gg.toast("ʜᴇᴀᴅsʜᴏᴛ 50% Activated!!")
 end
-function mbhs2()
+function mbhs3()
 gg.alert("HEADSHOT 70% ")
-gg.clearResults()
-gg.setRanges(32)
-gg.searchNumber("30.5;25", 16, false, 536870912, 0, -1)
-gg.getResults(10)
-gg.editAll("100", 16)
-gg.clearResults()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("170", gg.TYPE_FLOAT)
 gg.toast("ʜᴇᴀᴅsʜᴏᴛ 70%")
 end
-function mbhs3()
+function mbhs4()
 gg.alert("MB - HEDSHOT BRUTAL ")
 gg.setRanges(gg.REGION_BAD)
 gg.searchNumber("-88.66608428955;26", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -1197,7 +1206,7 @@ gg.editAll("280", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.toast("MB - HEDSHOT (Brutal) Activated!!")
 end
-function mbhs4()
+function mbhs5()
 gg.clearResults()
 gg.setRanges(131072)
 gg.searchNumber("-88.66608428955;26:512",16, false,536870912,0,-1)
@@ -1224,7 +1233,7 @@ gg.editAll("0.07",16)
 gg.clearResults()
 gg.toast("BULLET TRACKER")
 end
-function mbhs5()
+function mbhs6()
 gg.clearResults()
 gg.setRanges(131072)
 gg.searchNumber("-88.66608428955;26:512",16, false,536870912,0,-1)
@@ -1313,217 +1322,64 @@ end
 function Dmg()
   gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("88000;0.08600000292", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("88000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1401)
-  gg.editAll("37401", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("87000;0.09600000083", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("87000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1401)
-  gg.editAll("37401", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("90000;0.07500000298", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("90000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1401)
-  gg.editAll("37401", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("87000;0.09229999781", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("87000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1401)
-  gg.editAll("37401", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("87000;0.86", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("87000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1401)
-  gg.editAll("37401", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("94000;0.08570999652", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("94000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1401)
-  gg.editAll("37401", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("71500;0.10000000149", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("71500", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1401)
-  gg.editAll("37401", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("71500", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("71500", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1401)
-  gg.editAll("37401", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("71500;0.07999999821", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("71500", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1401)
-  gg.editAll("37401", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("78000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("78000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1401)
-  gg.editAll("37401", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("91000;2.2;2.5::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("91000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1401)
-  gg.editAll("37401", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("76000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("76000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1401)
-  gg.editAll("37401", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("79000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("79000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1401)
-  gg.editAll("37401", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("80000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("80000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1401)
-  gg.editAll("37401", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("85300;0.09000000358", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("85300", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1401)
-  gg.editAll("37401", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("99000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("99000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1401)
-  gg.editAll("37401", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("84000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("84000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1401)
-  gg.editAll("37401", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("94500", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("94500", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1401)
-  gg.editAll("37401", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("91500;0.07500000298", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("91500", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1401)
-  gg.editAll("37401", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("71500;0.109", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("71500", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1401)
-  gg.editAll("37401", gg.TYPE_FLOAT)
+  gg.searchNumber("16000~99999;3D;0.1;1D::40", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("16000~99999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("500000", gg.TYPE_FLOAT)
   gg.clearResults()
   gg.toast("High Damage Activated")
 end
 
 function HSWepone()
   MCHS = gg.multiChoice({
-    "┏ Beta HS 30% [Land]",
-	"┏ Beta HS 50% [Land]",
-    "┏ Beta HS 75% [Land]",
-	"┏ Beta MB - HS Brutal [Land]",
+    "┏ (New)Less Recoil [Lobby]",
+	"┏ Auto HS 100% [Lobby]",
+    "┏ Auto HS Parah [Lobby]",
+	"┏ MB - HS Brutal [Lobby]",
     "☑BACK"
-  }, nil, "AUTO HEADSHOT")
+  }, nil, "READY BARBAR LANDING")
 if MCHS == nil then
 else
-if MCHS[1] == true then BHS1()end
-if MCHS[2] == true then BHS2()end
+if MCHS[1] == true then LSB()end
+if MCHS[2] == true then AHS()end
 if MCHS[3] == true then BHS3()end
 if MCHS[4] == true then MB100()end
 if MCHS[5] == true then HOME()end
 end
 MCPBO = -1
 end
-function BHS1()
+function LSB()
   gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("-2.92050004005;-86.45761108398;-88.66608428955;16;26::17", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("26", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(2)
-  gg.editAll("-860", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("0.15122038126;90.48510742188;-88.73961639404;18;28::17", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("18;28::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(2)
-  gg.editAll("-960", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("9.20161819458;23;25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.setRanges(32)
+  gg.setRanges(32)
+  gg.searchNumber("1,348,759,109;1953067887;1,634,692,166;1,920,287,604::28", 4, false, 536870912, 0, -1)
+  gg.searchNumber("1634692166", 4, false, 536870912, 0, -1)
   gg.getResults(10)
-  gg.editAll("40", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("9.20161819458;23;25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResultCount()
-  gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.editAll("40", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("Auto Headshot 30% Activated")
+  gg.editAll("1634692266", 4)
+  gg.toast("Less Recoil Successful!")
 end
-function BHS2()
+function AHS()
   gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("-2.92050004005;-86.45761108398;-88.66608428955;16;26::17", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("26", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(2)
-  gg.editAll("-860", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("0.15122038126;90.48510742188;-88.73961639404;18;28::17", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("18;28::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(2)
-  gg.editAll("-960", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("9.20161819458;23;25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(10)
-  gg.editAll("100", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("Auto Headshot 50% Activated")
-end 
+  gg.editAll("300", gg.TYPE_FLOAT)
+  gg.toast("Auto Headshot Lobbyโ”")
+end
 function BHS3()
   gg.clearResults()
-  gg.setRanges(gg.REGION_C_DATA)
-  gg.searchNumber("953267991", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("953267991", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineAddress("6A0", -1, gg.TYPE_QWORD, gg.SIGN_EQUAL, 0, -1)
-  gg.processResume()
-  revert = gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
-  gg.editAll("1203982208", gg.TYPE_QWORD)
-  gg.processResume()
-  gg.clearResults()
-  gg.toast("Auto Headshot 75% Activated")
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("500", gg.TYPE_FLOAT)
+  gg.toast("Auto Headshot Lobbyโ”")
 end
 function MB100()
+  gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("90.775703430176;0;8;15;16;18;28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(10)
   gg.editAll("1000", gg.TYPE_FLOAT)
-  gg.clearResults()
   gg.toast("Magic Bullet 100% Activated")
 end
 
@@ -1532,7 +1388,8 @@ function PlayerInGame()
   MCPlayer = gg.choice({
     "┏ Sit Down Sᴄᴏᴘᴇ[ᴏN]",
     "┏ Sɪᴛ Down Sᴄᴏᴘᴇ[Oғғ]",
-	"┏ Fast Parasute[Land]",	
+	"┏ Fast Parasute[Land]",
+	"┏ Fast Landing[Land]",	
     "☑BACK"
   }, nil, "Hack Players")
   if MCPlayer == nil then
@@ -1547,6 +1404,9 @@ function PlayerInGame()
       FASTPARA()
 	end
     if MCPlayer == 4 then
+      FastLand()
+	end	
+    if MCPlayer == 5 then
       HOME()
     end
   end
@@ -1577,18 +1437,33 @@ function SITSCOPEOFF()
   gg.clearResults()
   gg.toast("Sit Scope Deactivated!")
 end
-
 function FASTPARA()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("0.75;150;1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(1000)
+  gg.editAll("300", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Activating")
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("0.75;150;30", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("0.75", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(200)
+  gg.editAll("0", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Fast Parachute activated!")
+end
+function FastLand()
   gg.clearResults()
   gg.setRanges(gg.REGION_C_BSS)
   gg.searchNumber("2048D;4D;1F;1F;1D:30", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResultsCount()
   gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
   gg.searchNumber("3000;5000;1024;1000::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(6284)
+  gg.getResults(3472849)
   gg.editAll("999999", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("Fast Parachute activated!")
+  gg.toast("Fast Landing")
 end
 
 function AntenaInGame()
@@ -1872,7 +1747,7 @@ function ViewInGame()
   MCView = gg.choice({
     "┏ Wide View 30% [Game]",
     "┏ Wide View 60% [Game]",
-    "┏ Mode BlackSky [Game]",
+    "┏ Mode BlackSky [Exynos/Game]",
     "☑BACK"
   }, nil, "Mode View Players")
   if MCView == nil then
@@ -1912,13 +1787,14 @@ function View60()
   gg.toast("Wide View 60% Activated")
 end
 function BsKy()
-  gg.clearResults()
-  gg.setRanges(4)
-  gg.searchNumber("49;50;1;131;133;55;56;135;140:173", 4, false, 536870912, 0, -1)
-  gg.searchNumber("56", 4, false, 536870912, 0, -1)
-  gg.getResults(5)
-  gg.editAll("12", 4)
-  gg.clearResults()
+  gg.clearResults() --MCPBO™
+  gg.setRanges(gg.REGION_ANONYMOUS) --MCPBO™
+  gg.clearResults() --MCPBO™
+  gg.searchNumber("100;403200::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(50) --MCPBO™
+  gg.editAll("-99", gg.TYPE_FLOAT) --MCPBO™
+  gg.clearResults() --MCPBO™
   gg.toast("Black Sky Active")
 end
 
