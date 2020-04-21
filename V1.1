@@ -1,0 +1,351 @@
+COUNT=50
+
+sd=storage/emulated/0
+DATA1=storage/emulated/0/Android/data/com.tencent.ig
+DATA2=storage/emulated/0/Android/data/com.tencent.ig/files
+DATA3=storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra
+DATA4=storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra
+DATA5=storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved
+PAKS=storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks
+
+Logcleaner () 
+{
+rm -rf /storage/emulated/0/.chaozhuo.gameassistant
+rm -rf /storage/emulated/0/backups
+rm -rf /storage/emulated/0/.estrongs
+rm -rf /storage/emulated/0/.dlprovider
+rm -rf /storage/emulated/0/osmini
+rm -f /cache/magisk.log
+rm -f /cache/magisk.log.bak
+date "+%a %d %b %Y %Z %H:%M:%S"
+echo "╔══════════════════════════════╗"
+echo "| ✪                  𝐂𝐥𝐞𝐚𝐧𝐢𝐧𝐠 𝐥𝐨𝐠𝐬 - ᴄᴀᴄʜᴇ ᴄʟᴇᴀʀᴇᴅ ✓ |"
+echo "╚══════════════════════════════╝"
+sleep 10
+}
+
+Fix()
+{
+echo "╔══════════════════════════════╗"
+echo "| ✪                  𝐂𝐥𝐞𝐚𝐧𝐢𝐧𝐠 𝐥𝐨𝐠𝐬 - 10 ᴍɪɴ ꜰɪx    ✓ |"
+echo "╚══════════════════════════════╝"
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/cache
+rm -rf /storage/emulated/0/MidasOverse
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/tbslog
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/login-identifier.txt
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/cacheFile.txt
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/vmpcloudconfig.json
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/IGH5CachePluginConfig.ini
+sleep 1
+}
+
+instalasi()
+{
+if [ ! -d "/data/data/com.tencent.ig" ];
+then
+echo "- PUBGM GLOBAL Tidak Terinstall"
+echo "- Silahkan Install Terlebih Dahulu Apk PUBG GLOBAL 0.17.0"
+exit 0;
+fi
+sleep 1
+echo "╔══════════════════════════════╗"
+echo "|✪Please Wait...                                 |"
+echo "╚══════════════════════════════╝"
+sleep 2
+mkdir /sdcard/.MCPBO™
+rm -rf /storage/emulated/0/.backups/com.tencent.ig
+touch /storage/emulated/0/.backups/com.tencent.ig
+chattr -i /storage/emulated/0/.backups/com.tencent.ig
+rm -rf /storage/emulated/0/tencent/Midas/Log/com.tencent.ig
+touch /storage/emulated/0/tencent/Midas/Log/com.tencent.ig
+chattr -i /storage/emulated/0/tencent/Midas/Log/com.tencent.ig
+chmod -R 555 /data/media/0/MidasOversea/GUID
+echo ""
+echo "╔══════════════════════════════╗"
+echo "|✪Replacing File Data Crash...                   |"
+echo "╚══════════════════════════════╝"
+sleep 3
+rm -rf /data/data/com.tencent.ig/app_bugly
+rm -rf /data/data/com.tencent.ig/app_crashrecord
+rm -rf /data/data/com.tencent.ig/no_backup
+rm -rf /data/data/com.tencent.ig/files
+touch /data/data/com.tencent.ig/app_bugly
+touch /data/data/com.tencent.ig/app_crashrecord
+touch /data/data/com.tencent.ig/no_backup
+touch /data/data/com.tencent.ig/files
+chmod 755 /data/data/com.tencent.ig/app_bugly
+chmod 755 /data/data/com.tencent.ig/app_crashrecord
+chmod 755 /data/data/com.tencent.ig/no_backup
+chmod 755 /data/data/com.tencent.ig/files
+echo ""
+echo "╔══════════════════════════════╗"
+echo "|✪Deleting Magisk LOG...                         |"
+echo "╚══════════════════════════════╝"
+sleep 2
+rm -f /cache/magisk.log
+rm -f /cache/magisk.log.bak
+sleep 1
+echo ""
+echo "╔══════════════════════════════╗"
+echo "|✪Download Data MCPBO™                           |"
+echo "╚══════════════════════════════╝"
+wget https://raw.githubusercontent.com/gHesssBoys/Seasone-12/master/SV1
+wget https://raw.githubusercontent.com/gHesssBoys/Seasone-12/master/SV2
+sleep 1
+echo "╔══════════════════════════════╗"
+echo "|✪Prosess Instal Data MCPBO™ Done!               |"
+echo "╚══════════════════════════════╝"
+sleep 2
+echo ""
+mv SV1 /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.17.0.11800.pak
+cp -R SV2 /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.17.0.11801.pak
+cp -R SV2 /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.17.0.11801.pak
+mv SV2 /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.17.0.11800.pak
+sleep 1
+if [ ! -f "/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.17.0.11800.pak" ];
+then
+echo ""
+echo "╔══════════════════════════════╗"
+echo " • Installasi Gagal                               "
+echo " • Data Tidak ditemukan, silahkan coba lagi       "
+echo " • Atau hubungi @gHesss_Boys                      "
+echo "╚══════════════════════════════╝"
+exit 0;
+fi
+if [ ! -f "/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.17.0.11801.pak" ];
+then
+echo ""
+echo "╔══════════════════════════════╗"
+echo " • Installasi Gagal                               "
+echo " • Data Tidak ditemukan, silahkan coba lagi       "
+echo " • Atau hubungi @gHesss_Boys                      "
+echo "╚══════════════════════════════╝"
+exit 0;
+fi
+if [ ! -f "/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.17.0.11800.pak" ];
+then
+echo ""
+echo "╔══════════════════════════════╗"
+echo " • Installasi Gagal                               "
+echo " • Data Tidak ditemukan, silahkan coba lagi       "
+echo " • Atau hubungi @gHesss_Boys                      "
+echo "╚══════════════════════════════╝"
+exit 0;
+fi
+if [ ! -f "/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.17.0.11801.pak" ];
+then
+echo ""
+echo "╔══════════════════════════════╗"
+echo " • Installasi Gagal                               "
+echo " • Data Tidak ditemukan, silahkan coba lagi       "
+echo " • Atau hubungi @gHesss_Boys                      "
+echo "╚══════════════════════════════╝"
+exit 0;
+fi
+echo "╔══════════════════════════════╗"
+echo "|✪Instalasi Data MCPBO™ Done!                    |"
+echo "╚══════════════════════════════╝"
+}
+
+datamod()
+{
+rm -rf /$PAKS/game_patch_0.17.0.11801.pak
+rm -rf /$PAKS/game_patch_0.17.0.11800.pak
+rm -rf /$PAKS/core_patch_0.17.0.11801.pak
+rm -rf /$PAKS/core_patch_0.17.0.11800.pak
+mv /$PAKS/apollo_reslist.flist /sdcard/.MCPBO™/
+mv /$PAKS/filelist.json /sdcard/.MCPBO™/
+mv /$PAKS/puffer_res.eifs /sdcard/.MCPBO™/
+mv /$PAKS/PufferFileList.json /sdcard/.MCPBO™/
+mv /$PAKS/*cures* /sdcard/.MCPBO™/}
+
+repair()
+{
+mv /sdcard/.MCPBO™/* /$PAKS/
+rm -rf /sdcard/.MCPBO™
+}
+
+clearcache()
+{
+rm -rf /sdcard/Android/data/com.*/cache
+rm -rf /sdcard/Android/data/bin.*/cache
+rm -rf /sdcard/Android/data/by.*/cache
+rm -rf /sdcard/Android/data/ru.*/cache
+rm -rf /sdcard/Android/data/eu.*/cache
+rm -rf /sdcard/Android/data/org.*/cache
+rm -rf /sdcard/Android/data/tv.*/cache
+rm -rf /sdcard/Android/data/net.*/cache
+echo "╔══════════════════════════════╗"
+echo "| • Clear Cache 25%                              |"
+echo "╚══════════════════════════════╝"
+sleep 1
+rm -rf /sdcard/Android/data/*/cache
+echo "╔══════════════════════════════╗"
+echo "| • Clear Cache 50%                              |"
+echo "╚══════════════════════════════╝"
+sleep 1
+rm -rf /data/data/com.*/cache
+rm -rf /data/data/bin.*/cache
+rm -rf /data/data/by.*/cache
+rm -rf /data/data/ru.*/cache
+rm -rf /data/data/eu.*/cache
+rm -rf /data/data/org.*/cache
+rm -rf /data/data/tv.*/cache
+rm -rf /data/data/net.*/cache
+echo "╔══════════════════════════════╗"
+echo "| • Clear Cache 75%                              |"
+echo "╚══════════════════════════════╝"
+sleep 2
+rm -rf /data/data/*/cache
+echo "╔══════════════════════════════╗"
+echo "| • Clear Cache 100%                             |"
+echo "╚══════════════════════════════╝"
+echo "[✔] ALL DONE!!!"
+}
+
+
+ScaneDevice()
+{
+echo "Scanning Device......."
+sleep 1
+if [ ! -f "/data/tmp/ccd" ];
+then
+echo ""
+echo "_Failed to Execute"
+echo "_Your Device Not Registerd"
+echo ""
+echo "Creator @gHesss_Boys"
+exit 0;
+fi
+echo ""
+echo "Mantaaap Kalian Luar Biassa !!!"
+}
+
+
+sleep 3
+echo ""
+echo -n "Time Zone																: "
+getprop persist.sys.timezone
+sleep 1
+echo -n "GSM Operator													: "
+getprop gsm.operator.alpha
+sleep 1
+echo -n "ISO Country														: "
+getprop gsm.operator.iso-country
+sleep 1
+echo -n "Device Brand													: "
+getprop ro.product.brand
+sleep 1
+echo -n "Device Model													: "
+getprop ro.product.model
+sleep 1
+echo -n "Device Chipset											: "
+getprop ro.hardware
+sleep 2
+echo ""
+iptables --flush
+instalasi
+echo ""
+echo "╔══════════════════════════════╗"
+echo "| ✪[RULES]                                       |"
+echo "╚══════════════════════════════╝"
+echo "[✔] Gunakan BYPASS LOBBY Script MCPBO™ v1.          "
+sleep 1
+echo "• Avoid report in GAME"
+echo "• Max Kill 12"
+echo "• Don't use features other than above"
+echo "• If you really want to Push RANK !!"
+echo "• Do not shoot enemies behind the Wall, Trees, Stones and so on, shoot when the enemy is right seen and logical to kill"
+echo "• Play Like a PRO PLAYER"
+sleep 1
+echo ""
+echo "╔══════════════════════════════╗"
+echo "| ✪FITUR SAFE :                                  |"
+echo "╚══════════════════════════════╝"
+echo "[✔] Wallhack & Collor"
+echo "[✔] Less Recoil"
+echo "[✔] Magic Bullet & Headshot (HS 70-100% Rentan Notice 10Minutes Ban)"
+echo "╔══════════════════════════════╗"
+echo "| ✪Hindari Report di dalam GAME                  |"
+echo "╚══════════════════════════════╝"
+echo ""
+sleep 17
+echo "╔══════════════════════════════╗"
+echo "|✪Starting MCPBO™ GameGuardian...                |"
+echo "╚══════════════════════════════╝"
+sleep 1
+am start -n com.xbvqitfebbloqbyh/com.xbvqitfebbloqbyh.MainActivity
+sleep 1
+am start -n bin.mt.plus/bin.mt.plus.Main
+sleep 3
+echo "╔══════════════════════════════╗"
+echo "|✪Starting PUBG MOBILE GLOBAL                    |"
+echo "╚══════════════════════════════╝"
+sleep 3
+echo ""
+am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity
+sleep 50
+datamod
+echo ""
+c=0
+PACKAGE='com.tencent.ig'
+while [ $(pidof $PACKAGE) ]
+do
+c=$((c+1))
+Logcleaner
+((COUNT=$COUNT+10))
+if [ ! $(pidof $PACKAGE) ]; then
+break
+fi
+sleep 1
+done
+((final=$COUNT/60))
+am force-stop com.xbvqitfebbloqbyh
+am start -n bin.mt.plus/bin.mt.plus.Main
+echo ""
+echo "╔══════════════════════════════╗"
+printf "✪Game Stoped, Waktu Bermain Anda ";
+echo $final "Minutes ";
+echo "╚══════════════════════════════╝"
+echo ""
+echo ""
+echo "╔══════════════════════════════╗"
+echo "|✪Closing GameGuardian                           |"
+echo "╚══════════════════════════════╝"
+echo ""
+sleep 1
+echo "╔══════════════════════════════╗"
+echo "|✪PROSES REPAIR DAN CLEARING CACHE               |"
+echo "╚══════════════════════════════╝"
+echo "[✔] Repairs Paks and Permission to Default !!!  "
+echo "[✔] Membersihkan Cache - Data                   "
+echo "[✔] Please Wait......                           "
+repair
+sleep 1
+am force-stop com.tencent.ig
+echo "╔══════════════════════════════╗"
+echo "|✪Repair Data Selesai !!!!                       |"
+echo "╚══════════════════════════════╝"
+echo ""
+clearcache
+sleep 3
+echo ""
+echo "╔══════════════════════════════╗"
+echo "|✪FINISH.                                        |"
+echo "╚══════════════════════════════╝"
+echo "[✔] Now You Can Exit Script/MT Manager            "
+sleep 0
+echo ""
+echo "╔══════════════════════════════╗"
+echo "| © Coding By :                                  |"
+echo "╚══════════════════════════════╝"
+echo "• Creator MCPBO™ - @gHesssBoys                   "
+echo ""
+echo ""
+echo ""
+echo ""
+echo "           ✰||| Keep Using if Work |||✰    "
+echo ""
